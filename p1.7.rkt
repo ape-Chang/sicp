@@ -13,8 +13,10 @@
 (define (improve guess x)
   (average guess (/ x guess)))
 
+;; good-enough? is defined as the diff
+;; between this guess and next guess
 (define (good-enough? guess x)
-  (< (abs (- (square guess) x)) 0.0001))
+  (< (abs (- (improve guess x) guess)) 0.0001))
 
 ;; driver case
 (esqrt 2)

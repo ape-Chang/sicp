@@ -1,5 +1,7 @@
 #lang racket
 
+;; FIXME
+
 (define (sum term a next b)
   (if (> a b)
       0
@@ -12,8 +14,4 @@
   (* dx
      (sum f a  next b)))
 
-(define (simpson-integral f a b dx)
-  (define (next x) (+ x dx))
-
-  (* dx
-     (sum f a  next b)))
+(define (simpson-integral f a b n))

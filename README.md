@@ -11,4 +11,4 @@ Naming Convention
 
 Go Fix
 -------
-1.12 1.28
+1.12 1.28 1.45

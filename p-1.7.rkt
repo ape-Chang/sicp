@@ -1,6 +1,7 @@
 #lang racket
 
-(require "common.rkt")
+(define (average x y) (/ (+ x y) 2))
+(define (square x) (* x x))
 
 ;; compute square root using Newton method
 (define (esqrt x) (sqrt-iter 1.0 x))

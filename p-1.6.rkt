@@ -1,5 +1,7 @@
 #lang racket
-(require "common.rkt")
+
+(define (average x y) (/ (+ x y) 2))
+(define (square x) (* x x))
 
 (define (esqrt x) (sqrt-iter 1.0 x))
 ;; this will result an endless loop till out of memory
